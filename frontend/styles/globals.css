@@ -1,0 +1,46 @@
+css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', 'Space Grotesk', 'Rubik', ui-sans-serif;
+  --color-primary: #7B2FF2;
+  --color-secondary: #F357A8;
+  --color-bg: #22223B;
+  --color-accent: #17EAD9;
+}
+
+/* Gen Z glassmorphism */
+.bg-glass {
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  border: 1.5px solid rgba(255,255,255,0.15);
+}
+
+/* Gen Z gradient text */
+.text-gradient-genz {
+  background: linear-gradient(90deg, #FF6FD8 0%, #3813C2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Emoji icon buttons */
+.btn-emoji {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  font-size: 1.1rem;
+  background: linear-gradient(90deg, #17EAD9 0%, #6078EA 100%);
+  color: white;
+  box-shadow: 0 4px 12px 0 rgba(23,234,217,0.10);
+  transition: background 0.2s;
+}
+
+.btn-emoji:hover {
+  background: linear-gradient(90deg, #6078EA 0%, #17EAD9 100%);
+}
